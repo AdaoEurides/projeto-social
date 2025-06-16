@@ -1,0 +1,39 @@
+@charset "UTF-8";
+* {
+    /*Configuração global, para toda a página*/
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body {
+    height: 100vh; /*Para ocupar a altura total do navegador*/
+    width: 100vw; /*Para ocupar a altura total do navegador*/
+    background-color: black;
+}
+
+main {
+    position: relative; 
+    height: 100vh;
+    background: url(../imagens/fundo-madeira.jpg) no-repeat top center; /*Imagem de fundo sem repetição, fixada no topo e no centro*/
+    background-size: cover; /*Para a imagem de maderia cobrir a tela inteira*/
+    background-attachment: fixed; /*Para a imagem ficar fixa*/
+}
+
+section#telefone {
+    position: absolute; /*Centralizar*/
+    top: 50%; /*Centralizar*/
+    left: 50%; /*Centralizar*/
+    transform: translate(-50%, -50%); /*Centralizar*/
+    height: 627px;
+    width: 311px;
+    background: url('../imagens/frame-iphone.png') no-repeat;
+}
+
+iframe#tela {
+    position: relative;
+    top: 80px;
+    left: 22px;
+    width: 269px;
+    height: 471px;
+}
